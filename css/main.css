@@ -13,7 +13,7 @@ body {
 
 .container {
     width: 50%;
-    height: 90vh;
+    /* height: 90vh; */
     margin: 2rem auto;
     display: flex;
     justify-content: space-around;
@@ -117,6 +117,7 @@ body {
     background-color: transparent;
     color: #fff;
     border: none;
+    margin: 1rem 0;
 }
 
 
@@ -154,4 +155,19 @@ body {
 
 .nextLine-btn i {
     transform: rotate(90deg);
+}
+
+
+/***************** Responsive **************/
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
 }
