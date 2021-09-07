@@ -105,6 +105,7 @@ body {
     display: block;
     font-size: 1.7rem;
     font-weight: bold;
+    pointer-events: none;
 }
 
 
