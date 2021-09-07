@@ -1,0 +1,120 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    font-family: 'Zilla Slab';
+}
+
+.container {
+    width: 50%;
+    height: 90vh;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.keyboard-wrapper {
+    padding: 20px 30px;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+
+.keyboard-wrapper .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.keyboard-wrapper .row .char {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    color: #000;
+    margin: 6px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: -2px 3px 1px 1px #8d8d8d;
+    user-select: none;
+}
+
+.keyboard-wrapper .row .char:active {
+    transform: scale(0.9);
+    background: #b6b6b6;
+}
+
+.keyboard-wrapper .row .char.space-char {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #34c534;
+}
+
+.keyboard-wrapper .row .char.space-char span {
+    transform: rotate(90deg);
+    display: block;
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.keyboard-icon {
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+
+.text-wrapper {
+    width: 100%;
+    height: 300px;
+    resize: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 10px;
+    background: #fff;
+    color: #222;
+}
+
+.clear-btn {
+    background: #ff0037 !important;
+    color: #fff !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear-btn:active {
+    background: #da0332 !important;
+}
+
+.nextLine-btn,
+.back-btn {
+    width: 100px !important;
+    background: #555 !important;
+    color: #fff !important;
+}
+
+.back-btn {
+    width: 50px !important;
+}
+
+.nextLine-btn i {
+    transform: rotate(90deg);
+}
